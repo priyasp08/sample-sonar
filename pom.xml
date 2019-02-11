@@ -103,7 +103,7 @@
            <groupId>org.codehaus.mojo</groupId>
            <artifactId>findbugs-maven-plugin</artifactId>
 	   <version>${findbugs.version}</version>
-	      <configuration>
+	   <!--	      <configuration>
                <formats>
                    <format>xml</format>
                </formats>
@@ -117,7 +117,7 @@
                         </goals>
                     </execution>
                 </executions>
-
+-->
         </plugin>
         <plugin>
            <groupId>org.codehaus.mojo</groupId>
@@ -150,7 +150,17 @@
           <xmlOutput>true</xmlOutput>
           <!-- Optional directory to put findbugs xdoc xml report -->
           <xmlOutputDirectory>target/site</xmlOutputDirectory>
-        </configuration>
+  </configuration>
+
+       <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                                <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
         </plugin>
         <plugin>
            <groupId>org.apache.maven.plugins</groupId>
