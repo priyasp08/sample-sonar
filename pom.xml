@@ -97,7 +97,7 @@
         </configuration>
         </plugin>
 	-->
-    </plugins>
+    
 
      <plugin>
            <groupId>org.codehaus.mojo</groupId>
@@ -114,6 +114,7 @@
                </formats>
            </configuration>
    </plugin>
+   </plugins>
    </build>
   <reporting>
      <plugins>
