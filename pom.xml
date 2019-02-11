@@ -112,7 +112,16 @@
                <formats>
                    <format>xml</format>
                </formats>
-           </configuration>
+       </configuration>
+
+       <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>cobertura</goal>
+                        </goals>
+                    </execution>
+                </executions>
    </plugin>
    </plugins>
    </build>
