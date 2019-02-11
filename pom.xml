@@ -103,7 +103,7 @@
            <groupId>org.codehaus.mojo</groupId>
            <artifactId>findbugs-maven-plugin</artifactId>
 	   <version>${findbugs.version}</version>
-	   <!--	   <configuration>
+	      <configuration>
                <formats>
                    <format>xml</format>
                </formats>
@@ -113,11 +113,11 @@
                     <execution>
                         <phase>package</phase>
                         <goals>
-				<goal>findbugs</goal>
+				<goal>site</goal>
                         </goals>
                     </execution>
                 </executions>
--->
+
         </plugin>
         <plugin>
            <groupId>org.codehaus.mojo</groupId>
