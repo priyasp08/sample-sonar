@@ -113,7 +113,7 @@
                     <execution>
                         <phase>package</phase>
                         <goals>
-				<goal>site</goal>
+				<goal>check</goal>
                         </goals>
                     </execution>
                 </executions>
