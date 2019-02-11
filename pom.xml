@@ -103,21 +103,18 @@
            <groupId>org.codehaus.mojo</groupId>
            <artifactId>findbugs-maven-plugin</artifactId>
 	   <version>${findbugs.version}</version>
-	   <!--	      <configuration>
-               <formats>
-                   <format>xml</format>
-               </formats>
-       </configuration>
-
-       <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-				<goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
--->
+	    <configuration>
+          <effort>Max</effort>
+          <threshold>Low</threshold>
+          <xmlOutput>true</xmlOutput>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
         </plugin>
         <plugin>
            <groupId>org.codehaus.mojo</groupId>
@@ -146,21 +143,6 @@
            <groupId>org.codehaus.mojo</groupId>
            <artifactId>findbugs-maven-plugin</artifactId>
 	   <version>${findbugs.version}</version>
-	   <configuration>
-          <xmlOutput>true</xmlOutput>
-          <!-- Optional directory to put findbugs xdoc xml report -->
-          <xmlOutputDirectory>target/site</xmlOutputDirectory>
-  </configuration>
-
-       <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                                <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-
         </plugin>
         <plugin>
            <groupId>org.apache.maven.plugins</groupId>
