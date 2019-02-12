@@ -140,10 +140,12 @@
    <artifactId>maven-checkstyle-plugin</artifactId>
    <version>3.0.0</version>
    <executions>
-     <execution>
-       <goals>
-         <goal>check</goal>
-       </goals>
+	   <execution>
+		   <phase>package</phase>
+			
+       			<goals>
+	         	<goal>checkstyle::check</goal>
+		       </goals>
      </execution>
    </executions>
  </plugin> 
