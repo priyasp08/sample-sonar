@@ -144,7 +144,7 @@
 		   <phase>package</phase>
 			
        			<goals>
-	         	<goal>checkstyle::check</goal>
+	         	<goal>checkstyle</goal>
 		       </goals>
      </execution>
    </executions>
